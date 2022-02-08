@@ -3,23 +3,19 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#FCEFDE",
+  },
+  mainContainer: {
+    flex: 2,
+    backgroundColor: "#FCEFDE",
     alignItems: "center",
     justifyContent: "center"
   },
-  // background: {
-  //   resizeMode: "cover",
-  //   justifyContent: "center"
-  // },
   titleContainer: {
     flex: 1,
     justifyContent: 'center',
     width: '100%',
     height: 56,
     backgroundColor: 'blue',
-    // paddingTop: 84,
-    // paddingBottom: 756,
-    //top: 3,
-    //left: 16,
   },
   titleText: {
     justifyContent: 'flex-end',
@@ -40,7 +36,6 @@ const styles = StyleSheet.create({
   sectionStyle: {
     flexDirection: 'row',
     backgroundColor: '#FFFFFF',
-    //backgroundColor: 'red',
     justifyContent: 'center',
     alignItems: 'center',
     height: 48,
@@ -120,9 +115,10 @@ const styles = StyleSheet.create({
     flex: 1,
     width: 414,
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'flex-end',
     height: 56,
     backgroundColor: 'lightblue',
+    marginBottom: 45
   },
   footerText1: {
     lineHeight: 20,
