@@ -1,5 +1,5 @@
 import React, { useCallback } from "react";
-import { KeyboardAvoidingView, Text, TextInput, TouchableOpacity, View, Image } from "react-native";
+import { Platform, KeyboardAvoidingView, Text, TextInput, TouchableOpacity, View, Image } from "react-native";
 import styles from './Login.styles'
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
@@ -34,13 +34,15 @@ const Login = ({ loginSuccess }) => {
 
   return (
     <View style={styles.container}>
+      <View style={{flex: 2}} />
       <KeyboardAvoidingView
         style={styles.mainContainer}
-        behavior="height"
+        behavior={Platform.OS === "ios" ? "padding" : "height"}
       >
         <View style={styles.titleContainer}>
           <Text style={styles.titleText}>會員登入</Text>
         </View>
+        <View style={{flex: 2}} />
         <View style={styles.inputContainer}>
           <View style={styles.sectionStyle}>
             <Image source={require('../../assets/User.png')} style={styles.ImageStyle} />
@@ -87,15 +89,17 @@ const Login = ({ loginSuccess }) => {
           >
             <Text style={styles.buttonText}>登 入</Text>
           </TouchableOpacity>
-          <Text style={styles.forgetPassword}>忘記密碼？</Text>
-        </View>
-        <View style={styles.footerContainer}>
-          <Text style={styles.footerText1}>前往LINE@文字客服</Text>
-          <Text style={styles.footerText2}>如有任何疑問，歡迎您來電寰宇家庭客服中心：{"\n"}
-            0809-080-000 或 02-7706-8000</Text>
+          <TouchableOpacity>
+            <Text style={styles.forgetPassword}>忘記密碼？</Text>
+          </TouchableOpacity>
         </View>
       </KeyboardAvoidingView>
-
+      <View style={{flex: 3}} />
+      <View style={styles.footerContainer}>
+        <Text style={styles.footerText1}>前往LINE@文字客服</Text>
+        <Text style={styles.footerText2}>如有任何疑問，歡迎您來電寰宇家庭客服中心：{"\n"}
+              0809-080-000 或 02-7706-8000</Text>
+      </View>
     </View>
   );
 };
