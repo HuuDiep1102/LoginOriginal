@@ -148,18 +148,17 @@ const styles = StyleSheet.create({
     flex: 2,
     alignItems: "center",
     justifyContent: "center",
-
-    backgroundColor: 'yellow'
+    //backgroundColor: 'yellow'
   },
   titleContainer: {
-    marginBottom: 60,
-    justifyContent: 'flex-start',
+    marginBottom: 35,
+    justifyContent: 'center',
     width: '100%',
     height: 56,
-    backgroundColor: 'blue',
+    //backgroundColor: 'blue',
   },
   titleText: {
-    justifyContent: 'flex-start',
+    justifyContent: 'center',
     marginBottom: 10,
     top: 3,
     left: 16,
@@ -195,7 +194,7 @@ const styles = StyleSheet.create({
   },
   inputContainer: {
     width: '100%',
-    backgroundColor: "skyblue",
+    //backgroundColor: "skyblue",
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -210,9 +209,9 @@ const styles = StyleSheet.create({
     flex: 1
   },
   buttonContainer: {
-    marginTop: 60,
+    marginTop: 50,
     width: '100%',
-    backgroundColor: "steelblue",
+    //backgroundColor: "steelblue",
     justifyContent: 'space-evenly',
     alignItems: 'center',
   },
@@ -220,10 +219,11 @@ const styles = StyleSheet.create({
     backgroundColor: '#EC1C24',
     width: 184,
     textAlign: 'center',
-    height: 45,
+    height: 40,
     padding: 15,
     borderRadius: 20,
     alignItems: 'center',
+    justifyContent: 'center'
   },
   buttonOutline: {
     backgroundColor: 'white',
@@ -233,13 +233,13 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     color: 'white',
-    alignItems: 'center',
     fontWeight: '700',
     width: 33,
     height: 20,
     fontSize: 14,
   },
   forgetPassword:{
+    opacity: 0.2,
     marginTop: 18,
     lineHeight: 20,
     fontWeight: '700',
@@ -257,7 +257,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'flex-end',
     height: 56,
-    backgroundColor: 'lightblue',
+    //backgroundColor: 'lightblue',
     marginBottom: 45
   },
   footerText1: {

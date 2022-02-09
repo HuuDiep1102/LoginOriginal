@@ -89,9 +89,7 @@ const Login = ({ loginSuccess }) => {
           >
             <Text style={styles.buttonText}>登 入</Text>
           </TouchableOpacity>
-          <TouchableOpacity>
-            <Text style={styles.forgetPassword}>忘記密碼？</Text>
-          </TouchableOpacity>
+          <Text style={styles.forgetPassword}>忘記密碼？</Text>
         </View>
       </KeyboardAvoidingView>
       <View style={{flex: 3}} />
