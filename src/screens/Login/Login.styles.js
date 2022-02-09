@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#FCEFDE",
   },
   mainContainer: {
-    flex: 2,
+    marginTop: 50,
     alignItems: "center",
     justifyContent: "center",
   },
@@ -110,11 +110,12 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   footerContainer: {
+    position: 'absolute',
+    top: 590,
     width: 414,
     alignItems: 'center',
     justifyContent: 'flex-end',
     height: 56,
-    marginBottom: 45
   },
   footerText1: {
     lineHeight: 20,
