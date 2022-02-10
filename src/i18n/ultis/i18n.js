@@ -1,10 +1,7 @@
 import i18n from "i18next";
 import { reactI18nextModule } from "react-i18next";
 import localesResourse from "../locales";
-//import * as RNLocalize from "react-native-localize";
 import DeviceInfo from "react-native-device-info";
-
-console.log("detect " + DeviceInfo.getDeviceLocale());
 
 const languageDetector = {
   type: "languageDetector",
@@ -18,7 +15,7 @@ i18n
   .use(languageDetector)
   .init({
     resources: localesResourse,
-    fallbackLng: "vi",
+    fallbackLng: "en",
     debug: true,
     interpolation: {
       escapeValue: false

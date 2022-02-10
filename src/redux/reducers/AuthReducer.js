@@ -25,11 +25,6 @@ const authReducer = (state = INITIAL_STATE, action) => {
         password: '',
         token: '',
       };
-    // case LOGIN_REQUEST:
-    //   const res = await axios.post("https://codersx-swagger.glitch.me/api/auth/login", {
-    //     email, password
-    //   });
-    //   dispatch(LOGIN_SUCCESS(res.data));
     default:
       return state;
   }

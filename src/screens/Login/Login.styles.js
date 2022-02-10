@@ -2,18 +2,18 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#FCEFDE",
+    backgroundColor: "#FCEFDE"
   },
   mainContainer: {
+    flex: 1,
     marginTop: 50,
     alignItems: "center",
-    justifyContent: "center",
+    justifyContent: "center"
   },
   titleContainer: {
     marginBottom: 35,
     justifyContent: 'center',
     width: '100%',
-    height: 56,
   },
   titleText: {
     justifyContent: 'center',
@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 40,
     paddingVertical: 10,
     borderRadius: 24,
-    marginTop: 36,
+    marginTop: 36
   },
   ImageStyle: {
     padding: 1,
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
   inputContainer: {
     width: '100%',
     justifyContent: 'center',
-    alignItems: 'center',
+    alignItems: 'center'
   },
   input: {
     backgroundColor: '#FFFFFF',
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
     marginTop: 50,
     width: '100%',
     justifyContent: 'space-evenly',
-    alignItems: 'center',
+    alignItems: 'center'
   },
   button: {
     backgroundColor: '#EC1C24',
@@ -86,14 +86,13 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     marginTop: 5,
     borderColor: '#0782F9',
-    borderWidth: 2, 
+    borderWidth: 2,
   },
   buttonText: {
     color: 'white',
     fontWeight: '700',
-    width: 33,
     height: 20,
-    fontSize: 14,
+    fontSize: 14
   },
   forgetPassword:{
     opacity: 0.2,
@@ -107,22 +106,22 @@ const styles = StyleSheet.create({
   buttonOutlineText: {
     color: '#0782F9',
     fontWeight: '700',
-    fontSize: 16,
+    fontSize: 16
   },
   footerContainer: {
     position: 'absolute',
-    top: 590,
-    width: 414,
+    bottom: 45,
+    width: '100%',
     alignItems: 'center',
     justifyContent: 'flex-end',
-    height: 56,
   },
   footerText1: {
     lineHeight: 20,
     fontWeight: '700',
     fontSize: 14,
     fontFamily: 'Noto Sans TC',
-    color: '#F48120'
+    color: '#F48120',
+    paddingHorizontal: '20%'
   },
   footerText2: {
     opacity: 0.2,
@@ -131,7 +130,8 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontSize: 10,
     fontFamily: 'Noto Sans TC',
-    color: '#000000'
+    color: '#000000',
+    paddingHorizontal: '20%'
   },
 });
 export default styles;
