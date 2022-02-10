@@ -1,0 +1,13 @@
+{
+    "title": "Member Login",
+    "loginEmail": "ID number 10 or member 7",
+    "loginPassword": "Please enter a 4-8 password",
+    "login": "Login",
+    "forgetPassword": "Forgot your password?",
+    "lineContact": "Go to LINE@Text Customer Service",
+    "phoneContact": "If you have any questions, please call Universal Family Customer Service Center: 0809-080-000 or 02-7706-8000",
+    "requireEmail": "ID number 10 or member 7",
+    "validateEmail": "Invalid email format",
+    "requirePassword": "Cannot be left blank",
+    "validatePassword": "Please enter a 4-8 code password"
+}

@@ -8,16 +8,18 @@ import { useForm, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { loginSuccess } from "../../redux";
+import i18n from "../../i18n/ultis/i18n";
+
 
 const schema = yup.object().shape({
   email: yup
     .string()
-    .required("身分證字號10碼或會員7碼")
-    .email('电子邮件格式无效'),
+    .required("ID number 10 or member 7")
+    .email('Invalid email format'),
   password: yup
     .string()
-    .required("不能留空")
-    .min(6, "請輸入 4-8 碼密碼")
+    .required("Cannot be left blank")
+    .min(6, "Please enter a 4-8 code password")
 });
 
 
@@ -39,7 +41,7 @@ const Login = ({ loginSuccess }) => {
         behavior={Platform.OS === "ios" ? "padding" : "height"}
       >
         <View style={styles.titleContainer}>
-          <Text style={styles.titleText}>會員登入</Text>
+          <Text style={styles.titleText}>{i18n.t("title")}</Text>
         </View>
         <View style={styles.inputContainer}>
           <View style={styles.sectionStyle}>
@@ -48,7 +50,7 @@ const Login = ({ loginSuccess }) => {
               control={control}
               render={({ field: { onBlur, value, onChange } }) => (
                 <TextInput
-                  placeholder="身分證字號10碼或會員7碼"
+                  placeholder={i18n.t("loginEmail")}
                   value={value}
                   onBlur={onBlur}
                   onChangeText={onChange}
@@ -65,7 +67,7 @@ const Login = ({ loginSuccess }) => {
               control={control}
               render={({ field: { onBlur, value, onChange } }) => (
                 <TextInput
-                  placeholder="請輸入 4-8 碼密碼"
+                  placeholder={i18n.t("loginPassword")}
                   value={value}
                   onBlur={onBlur}
                   onChangeText={onChange}
@@ -85,15 +87,14 @@ const Login = ({ loginSuccess }) => {
             onPress={handleSubmit(onLogin)}
             style={styles.button}
           >
-            <Text style={styles.buttonText}>登 入</Text>
+            <Text style={styles.buttonText}>{i18n.t("login")}</Text>
           </TouchableOpacity>
-          <Text style={styles.forgetPassword}>忘記密碼？</Text>
+          <Text style={styles.forgetPassword}>{i18n.t("forgetPassword")}</Text>
         </View>
         <View style={{flex: 2}} />
         <View style={styles.footerContainer}>
-          <Text style={styles.footerText1}>前往LINE@文字客服</Text>
-          <Text style={styles.footerText2}>如有任何疑問，歡迎您來電寰宇家庭客服中心：{"\n"}
-            0809-080-000 或 02-7706-8000</Text>
+          <Text style={styles.footerText1}>{i18n.t("lineContact")}</Text>
+          <Text style={styles.footerText2}>{i18n.t("phoneContact")}</Text>
         </View>
       </KeyboardAvoidingView>
     </View>

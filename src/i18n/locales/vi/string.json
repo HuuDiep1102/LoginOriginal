@@ -1,0 +1,13 @@
+{
+    "title": "Đăng nhập Thành viên",
+    "loginEmail": "ID số 10 hoặc thành viên 7",
+    "loginPassword": "Vui lòng nhập mật khẩu 4-8",
+    "Đăng nhập đăng nhập",
+    "forgetPassword": "Quên mật khẩu của bạn?",
+    "lineContact": "Chuyển đến LINE @ Text Service Customer",
+    "phoneContact": "Nếu bạn có bất kỳ câu hỏi nào, vui lòng gọi Trung tâm Dịch vụ Khách hàng Universal Family: 0809-080-000 hoặc 02-7706-8000",
+    "requestEmail": "ID số 10 hoặc thành viên 7",
+    "validateEmail": "Định dạng email không hợp lệ",
+    "requestPassword": "Không được để trống",
+    "validatePassword": "Vui lòng nhập mật khẩu mã 4-8"
+}

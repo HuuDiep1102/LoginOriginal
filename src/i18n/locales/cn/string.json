@@ -1,0 +1,13 @@
+{
+    "title": "會員登入",
+    "loginEmail": "身分證字號10碼或會員7碼",
+    "loginPassword": "請輸入 4-8 碼密碼",
+    "login": "登 入",
+    "forgetPassword": "忘記密碼？",
+    "lineContact": "前往LINE@文字客服",
+    "phoneContact": "如有任何疑問，歡迎您來電寰宇家庭客服中心：0809-080-000 或 02-7706-8000",
+    "requireEmail": "身分證字號10碼或會員7碼",
+    "validateEmail": "电子邮件格式无效",
+    "requirePassword": "不能留空",
+    "validatePassword": "請輸入 4-8 碼密碼"
+}
